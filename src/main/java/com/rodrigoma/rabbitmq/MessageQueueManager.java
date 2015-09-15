@@ -10,6 +10,8 @@ import org.springframework.amqp.core.MessageListener;
  */
 public interface MessageQueueManager extends MessageListener {
 
+// teste CI
+
     String createQueue(String queueName);
 
     void sendMessage(String message, String destinationQueueName) throws Exception;
